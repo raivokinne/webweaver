@@ -290,7 +290,7 @@ gray-900 to-black text-foreground">
                   Get in Touch
                 </h2>
                 <p className="text-xl text-foreground/80 leading-relaxed">
-                  Ready to start your next project? Contact us today and let's discuss how we can help bring your vision to life.
+                  Ready to start your next project? Contact us today and let&apos;s discuss how we can help bring your vision to life.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-4">

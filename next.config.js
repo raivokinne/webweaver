@@ -5,6 +5,19 @@
 import "./src/env.js";
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+	images: {
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'source.unsplash.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'openup.com'
+			}
+		],
+	},
+};
 
 export default config;
