@@ -7,6 +7,14 @@ import { Button } from "~/components/ui/button"
 import { Input } from "~/components/ui/input"
 import { Textarea } from "~/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card"
+import {
+	Select,
+	SelectContent,
+	SelectItem,
+	SelectTrigger,
+	SelectValue,
+} from "~/components/ui/select"
+
 
 const words = ['Design', 'Simplicity', 'Quality', 'Innovation', 'Excellence']
 
@@ -273,7 +281,6 @@ gray-900 to-black text-foreground">
 											Ideal for clients who need ongoing support
 										</li>
 									</ul>
-									<Button className="mt-6 w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 group">Contact for Hourly Work</Button>
 								</CardContent>
 							</Card>
 							<Card>
@@ -300,7 +307,6 @@ gray-900 to-black text-foreground">
 											Ideal for well-defined projects
 										</li>
 									</ul>
-									<Button className="mt-6 w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 group">Request a Quote</Button>
 								</CardContent>
 							</Card>
 						</div>
@@ -382,6 +388,22 @@ gray-900 to-black text-foreground">
 												className="bg-background/50 border-border/50 focus:border-blue-500"
 											/>
 										</div>
+
+										<div className="space-y-2">
+											<label htmlFor="pricing" className="text-sm font-medium">
+												Pricing
+											</label>
+											<Select name="pricing">
+												<SelectTrigger className="bg-background/50 border-border/50 focus:border-blue-500">
+													<SelectValue placeholder="Pricing Option" />
+												</SelectTrigger>
+												<SelectContent>
+													<SelectItem value="hourly">Hourly</SelectItem>
+													<SelectItem value="custom">Custom</SelectItem>
+												</SelectContent>
+											</Select>
+										</div>
+
 
 										<div className="space-y-2">
 											<label htmlFor="message" className="text-sm font-medium">
