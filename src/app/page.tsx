@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { Menu, X, Code, Paintbrush, Smartphone, Send, ChevronRight, ArrowRight } from 'lucide-react'
+import { Menu, X, Code, Paintbrush, Smartphone, Send, ChevronRight, ArrowRight, Check } from 'lucide-react'
 import { Button } from "~/components/ui/button"
 import { Input } from "~/components/ui/input"
 import { Textarea } from "~/components/ui/textarea"
@@ -245,6 +245,68 @@ gray-900 to-black text-foreground">
 					</div>
 				</section>
 
+				<section id="pricing" className="py-20">
+					<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+						<h2 className="text-3xl font-extrabold text-center text-blue-500/90 mb-12">Flexible Pricing Options</h2>
+						<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+							<Card>
+								<CardHeader>
+									<CardTitle className="text-2xl font-bold text-foreground text-center">Hourly Rate</CardTitle>
+								</CardHeader>
+								<CardContent className="text-center">
+									<p className="text-4xl font-bold mb-4">$15 - $20 / hour</p>
+									<ul className="text-left space-y-2">
+										<li className="flex items-center">
+											<Check className="h-5 w-5 mr-2 text-green-500" />
+											Flexible for small tasks or ongoing projects
+										</li>
+										<li className="flex items-center">
+											<Check className="h-5 w-5 mr-2 text-green-500" />
+											3-4 hours of focused work per day
+										</li>
+										<li className="flex items-center">
+											<Check className="h-5 w-5 mr-2 text-green-500" />
+											Regular updates and communication
+										</li>
+										<li className="flex items-center">
+											<Check className="h-5 w-5 mr-2 text-green-500" />
+											Ideal for clients who need ongoing support
+										</li>
+									</ul>
+									<Button className="mt-6 w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 group">Contact for Hourly Work</Button>
+								</CardContent>
+							</Card>
+							<Card>
+								<CardHeader>
+									<CardTitle className="text-2xl font-bold text-center">Project-Based</CardTitle>
+								</CardHeader>
+								<CardContent className="text-center">
+									<p className="text-4xl font-bold mb-4">Custom Quote</p>
+									<ul className="text-left space-y-2">
+										<li className="flex items-center">
+											<Check className="h-5 w-5 mr-2 text-green-500" />
+											Tailored to your specific project requirements
+										</li>
+										<li className="flex items-center">
+											<Check className="h-5 w-5 mr-2 text-green-500" />
+											Clear milestones and deliverables
+										</li>
+										<li className="flex items-center">
+											<Check className="h-5 w-5 mr-2 text-green-500" />
+											Fixed price for budget certainty
+										</li>
+										<li className="flex items-center">
+											<Check className="h-5 w-5 mr-2 text-green-500" />
+											Ideal for well-defined projects
+										</li>
+									</ul>
+									<Button className="mt-6 w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 group">Request a Quote</Button>
+								</CardContent>
+							</Card>
+						</div>
+					</div>
+				</section>
+
 				<section id="about" className={`py-32 ${isIntersecting.about ? 'animate-fade-up' : 'opacity-0'}`}>
 					<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 						<div className="grid md:grid-cols-2 gap-16 items-center">
@@ -255,18 +317,6 @@ gray-900 to-black text-foreground">
 								<p className="text-xl text-foreground/80 leading-relaxed">
 									We are a passionate developers dedicated to creating exceptional digital experiences. With years of experience and a commitment to staying at the forefront of technology, we deliver solutions that help our clients succeed in the digital world.
 								</p>
-								<div className="grid grid-cols-3 gap-4 pt-4">
-									{[
-										{ number: '100+', label: 'Projects' },
-										{ number: '50+', label: 'Clients' },
-										{ number: '5+', label: 'Years' }
-									].map((stat, index) => (
-										<div key={index} className="text-center">
-											<div className="text-2xl font-bold text-blue-400">{stat.number}</div>
-											<div className="text-sm text-foreground/80">{stat.label}</div>
-										</div>
-									))}
-								</div>
 							</div>
 							<div className="relative group">
 								<div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg opacity-30 blur-lg group-hover:opacity-50 transition-opacity" />
