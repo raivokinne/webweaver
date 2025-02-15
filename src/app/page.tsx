@@ -395,7 +395,7 @@ gray-900 to-black text-foreground">
 											</label>
 											<Select name="pricing">
 												<SelectTrigger className="bg-background/50 border-border/50 focus:border-blue-500">
-													<SelectValue placeholder="Pricing Option" />
+													<SelectValue placeholder="Hourly" />
 												</SelectTrigger>
 												<SelectContent>
 													<SelectItem value="hourly">Hourly</SelectItem>
